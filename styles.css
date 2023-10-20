@@ -1,0 +1,576 @@
+:root {
+    --gap: 3rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    color: white;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 5rem;
+}
+
+h4 {
+    font-size: 4.5rem;
+}
+
+h5 {
+    font-size: 4rem;
+}
+
+h6 {
+    font-size: 3.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-bg {
+    background-image: url('/LandingPage/img/bg02.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+.main-bg02 {
+    background-image: url('/LandingPage/img/01.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.main-bg03 {
+    background-image: url('/LandingPage/img/02.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.main-bg04 {
+    background-image: url('/LandingPage/img/03.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.main-bg05 {
+    background-image: url('/LandingPage/img/04.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.main-bg06 {
+    background-image: url('/LandingPage/img/05.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10rem var(--gap);
+}
+
+.main-content2 {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 10rem var(--gap);
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.menu {
+    background-image: url(/LandingPage/img/bg01.png);
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    z-index: 1;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu h1 {
+    font-size: 2rem;
+    text-transform: none;
+}
+
+.menu h1 a:hover {
+    color: rgba(210, 0, 0, 0.5);
+}
+
+.menu h1 a {
+    color: red;
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 1.8rem;
+    font-size: 1.3rem;
+    position: relative;
+    color: rgb(255, 0, 0);
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: red;
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+}
+
+.menu-spacing {
+    min-height: 55.5px;
+}
+
+.intro-content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    justify-content: center;
+    align-content: center;
+}
+
+.intro-text {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.intro-text h2 {
+    text-shadow: 2px 2px 1px black;
+}
+
+.intro-text p {
+    text-shadow: 0 0 3px black, 0 0 5px black;
+    font-style: italic;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 6rem;
+}
+
+.intro-text02 {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    max-width: 64rem;
+    text-align: center;
+}
+
+.intro-text02 h2 {
+    color: black;
+}
+
+.intro-text02 p {
+    color: black;
+}
+
+.grid-content {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+
+}
+
+.grid-content h2 {
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.grid-description {
+    padding-bottom: 5rem;
+}
+
+.grid-content p {
+    color: black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--gap);
+}
+
+.grid h3 {
+    font-size: 3rem;
+}
+
+.lemans {
+    background-image: url(/LandingPage/img/Circuit_de_la_Sarthe_track_map.svg);
+    background-size: contain;
+    background-position: center center;
+    height: 30rem;
+    margin: 1rem;
+    background-repeat: no-repeat;
+
+}
+
+.gallery-bg {
+    background: black;
+}
+
+.gallery-img {
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+
+.gallery-img img {
+    transition: all 300ms ease-in-out;
+}
+
+.gallery-img img:hover {
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+
+.list-text {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    max-width: 64rem;
+    text-align: center;
+}
+
+.list-text h2 {
+    color: black;
+}
+
+.responsive-table {
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 36rem;
+}
+
+table caption {
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+table th {
+    background: lightgray;
+}
+
+table td,
+table th {
+    padding: 1rem;
+    text-align: left;
+    border: 0.1rem solid rgba(0, 0, 0, 0.103);
+}
+
+.contact-form {
+    grid-column: span 2;
+    width: 80%;
+    margin-top: -2rem;
+    margin-left: -2rem;
+}
+
+.contact-form .form-grid {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.form-grid legend {
+    font-size: 1.8rem;
+    font-style: italic;
+    margin-bottom: 3rem;
+    color: white;
+    text-shadow: 0 0 3px black, 0 0 5px black;
+}
+
+.form-group {
+    flex: 1 1 20rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.4rem;
+    font-style: italic;
+    color: white;
+    text-shadow: 0 0 3px black, 0 0 5px black;
+    margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    border: none;
+    background: white;
+    padding: 1.5rem 2rem;
+    width: 100%;
+}
+
+body .full-width {
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+.form-group button {
+    border: 0.5rem solid white;
+    background: none;
+    color: white;
+    padding: 1rem 1.5rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover {
+    background: white;
+    color: black;
+}
+
+.form-group ::placeholder {
+    color: rgba(0, 0, 0, 0.219);
+}
+
+.footer {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.footer p {
+    margin: 0;
+    padding: 3rem;
+}
+
+.footer a {
+    color: black;
+    transition: all 300ms ease-in-out;
+}
+
+.footer a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.footer-coracao {
+    color: red;
+}
+
+.close-menu {
+    display: none;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: white;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: black;
+    transform: rotate(-90deg);
+    border: 0.1rem solid black;
+}
+
+@media (max-width: 840px) {
+
+    h2,
+    h3,
+    .grid h3 {
+        font-size: 2.5rem;
+    }
+
+    .grid,
+    .grid-2,
+    .intro-content {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-img {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .gallery-img img {
+        width: 100%;
+    }
+
+    .menu {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        background: #000000;
+        text-align: center;
+        display: none;
+    }
+
+    .menu-content,
+    .menu-content ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-content {
+        height: 100vh;
+    }
+
+    .menu h1 {
+        font-size: 2.7rem;
+    }
+
+    .menu h1,
+    a {
+        text-shadow: 0 0 2px rgb(255, 255, 255), 0 0 2px rgb(255, 255, 255);
+    }
+
+    .close-menu-label::after {
+        content: '☰';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background: black;
+        color: white;
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.4rem;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.menu {
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        content: 'x';
+        color: red;
+        text-shadow: 0 0 2px rgb(255, 255, 255), 0 0 2px rgb(255, 255, 255);
+        text-align: center;
+        padding: 0.2rem;
+    }
+
+    .menu-spacing {
+        display: none;
+        
+    }
+
+    @media (max-width: 600px) {
+        .contact-form {
+            margin-top: -20rem;
+            margin-left: 0;
+        }
+    }
+
+    .main-bg02 {
+        background-image: url('/LandingPage/img/01.jpg');
+        background-size: 110% 110%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .main-bg03 {
+        background-image: url('/LandingPage/img/02.jpg');
+        background-size: 140% 130%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .main-bg04 {
+        background-image: url('/LandingPage/img/03.jpg');
+        background-size: 120% 120%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .main-bg {
+        background-image: url('/LandingPage/img/bg02.png');
+        background-size: 130% 130%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+}
