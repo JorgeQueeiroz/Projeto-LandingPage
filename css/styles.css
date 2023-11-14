@@ -65,37 +65,37 @@ a {
 }
 
 .main-bg {
-    background-image: url('/LandingPage/img/bg02.png');
+    background-image: url('../img/bg02.png');
     background-size: cover;
     background-position: center center;
 }
 
 .main-bg02 {
-    background-image: url('/LandingPage/img/01.jpg');
+    background-image: url('../img/01.jpg');
     background-size: cover;
     background-position: center center;
 }
 
 .main-bg03 {
-    background-image: url('/LandingPage/img/02.jpg');
+    background-image: url('../img/02.jpg');
     background-size: cover;
     background-position: center center;
 }
 
 .main-bg04 {
-    background-image: url('/LandingPage/img/03.jpg');
+    background-image: url('../img/03.jpg');
     background-size: cover;
     background-position: center center;
 }
 
 .main-bg05 {
-    background-image: url('/LandingPage/img/04.jpg');
+    background-image: url('../img/04.jpg');
     background-size: cover;
     background-position: center center;
 }
 
 .main-bg06 {
-    background-image: url('/LandingPage/img/05.jpg');
+    background-image: url('../img/05.jpg');
     background-size: cover;
     background-position: center center;
 }
@@ -117,7 +117,7 @@ a {
 }
 
 .menu {
-    background-image: url(/LandingPage/img/bg01.png);
+    background-image: url('../img/bg01.png');
     background-repeat: no-repeat;
     position:fixed;
     top: 0;
@@ -270,7 +270,7 @@ a {
 }
 
 .lemans {
-    background-image: url(/LandingPage/img/Circuit_de_la_Sarthe_track_map.svg);
+    background-image: url('../img/Circuit_de_la_Sarthe_track_map.svg');
     background-size: contain;
     background-position: center center;
     height: 30rem;
@@ -561,28 +561,28 @@ body .full-width {
     }
 
     .main-bg02 {
-        background-image: url('/LandingPage/img/01.jpg');
+        background-image: url('../img/01.jpg');
         background-size: 110% 110%;
         background-position: center center;
         background-repeat: no-repeat;
     }
 
     .main-bg03 {
-        background-image: url('/LandingPage/img/02.jpg');
+        background-image: url('../img/02.jpg');
         background-size: 140% 130%;
         background-position: center center;
         background-repeat: no-repeat;
     }
     
     .main-bg04 {
-        background-image: url('/LandingPage/img/03.jpg');
+        background-image: url('../img/03.jpg');
         background-size: 120% 120%;
         background-position: center center;
         background-repeat: no-repeat;
     }
     
     .main-bg {
-        background-image: url('/LandingPage/img/bg02.png');
+        background-image: url('../img/bg02.png');
         background-position: 15% center;
     }
 
